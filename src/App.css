@@ -1,3 +1,15 @@
+.home-title{
+  color: blue;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+.home-section{
+background-color: black;
+background-size: contain;
+}
+
+
 .App {
   text-align: center;
 }
