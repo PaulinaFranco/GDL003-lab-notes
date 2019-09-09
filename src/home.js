@@ -16,7 +16,7 @@ class Home extends Component {
     return (
       <body className="home-section">
       <p className="home-title">Oh my notes!!</p>
-
+      <button type="submit" onClick={this.logout} class="btn btn-primary">Log out</button>
       </body>
     );
   }
