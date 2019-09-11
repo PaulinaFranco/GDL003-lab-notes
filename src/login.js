@@ -39,22 +39,37 @@ login(e) {
 
   render() {
     return (
-       <div className="col-md-6">
-       <form>
-      <div className="form-group">
-       <label for="exampleInputEmail1">Email address</label>
-       <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-       <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-       <div className="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-      </div>
-      <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
- </form>
+      <main>
+       <div className="split right">
+        <div className="signForm centered">
+          <form>
+            <div className="form-group">
+               <p>Email</p>
+               <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+            </div>
 
- </div>
+            <div className="form-group">
+              <p>Password</p>
+              <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+            </div>
+            <br />
+
+            <div className="form-group">
+              <button type="submit" onClick={this.login} className="btn btn-primary form-control">Login</button>
+              <button onClick={this.signup} className="btn btn-success form-control">Signup</button>
+            </div>
+        </form>
+      </div>
+      </div>
+
+      <div className="split left">
+        <div className="logo centered">
+          <h1>Oh, <br /> my notes!!!</h1>
+          <p>Rope's end stern deadlights gabion belay cable yardarm Cat o'nine tails. </p>
+          <p>Six pounders cutlass deadlights Cat o'nine tails pink hardtack crack Jennys tea cup trysail. Cat o'nine tails blow the man down pressgang wherry. </p>
+        </div>
+      </div>
+    </main>
     );
   }
 }

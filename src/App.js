@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import firebaseInit from './firebase';
 import Home from './home';

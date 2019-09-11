@@ -14,12 +14,6 @@ background-size: contain;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,6 +28,62 @@ background-size: contain;
 .App-link {
   color: #61dafb;
 }
+
+
+.form-control {
+  align-items: center;
+  color: #4e8d07;
+    }
+
+.form-group {
+  color: #dfa90d;
+  margin: .5em;
+}
+
+.btn {
+  margin: .5em;
+  height: 5%;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo {
+  color: #dfa90d;
+  font-family: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy;
+}
+
+.right{
+right: 0;
+background-color: black;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.p {
+  text-align: justify;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 
 @keyframes App-logo-spin {
   from {
