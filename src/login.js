@@ -10,6 +10,7 @@ class Login extends Component {
     this.login = this.login.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.signup = this.signup.bind(this);
+  //  this.userId = this.userId.bind(this);
     this.state = {
       email: '',
       password: ''
@@ -19,6 +20,8 @@ class Login extends Component {
 handleChange(e) {
   this.setState({ [e.target.name]: e.target.value });
 }
+
+
 
 login(e) {
   e.preventDefault();
@@ -40,7 +43,7 @@ login(e) {
   render() {
     return (
       <main>
-       <div className="split right">
+       <div className="split right splitHalf">
         <div className="signForm centered">
           <form>
             <div className="form-group">
@@ -62,7 +65,7 @@ login(e) {
       </div>
       </div>
 
-      <div className="split left">
+      <div className="split left splitHalf">
         <div className="logo centered">
           <h1>Oh, <br /> my notes!!!</h1>
           <p>Rope's end stern deadlights gabion belay cable yardarm Cat o'nine tails. </p>

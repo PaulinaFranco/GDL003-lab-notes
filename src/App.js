@@ -3,6 +3,7 @@ import './App.css';
 import firebaseInit from './firebase';
 import Home from './home';
 import Login from './login.js';
+import 'firebase/database';
 
 
 class App extends React.Component {
